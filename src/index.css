@@ -1,0 +1,69 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-div::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to right, #2ebae7, #38eb38, #5f955f, #d68a82, #dc7e74, #dc3422);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0 7%;
+}
+
+.header {
+    text-align: center;
+    font-family: "Colonna MT", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0.2rem;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 1px 1px 5px darkslategrey;
+}
+
+input:focus-within {
+    outline: none;
+    box-shadow: 2px 2px 15px darkslategrey;
+}
+
+.loading {
+    text-align: center;
+    font-family: "Dubai Light", sans-serif;
+}
+
+.dotone, .dottwo, .dotthree {
+    display: inline;
+    position: relative;
+    transform: translateY(-2px);
+    animation-name: blink;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: xxx-large;
+}
+
+.dottwo {
+    animation-delay: 0.10s;
+}
+
+.dotthree {
+    animation-delay: 0.20s;
+}
+
+@keyframes blink {
+    25% {transform: translateY(-4px)}
+    50% {transform: translateY(-5px)}
+    75% {transform: translateY(-3px)}
+    100% {transform: translateY(-2px)}
+}
